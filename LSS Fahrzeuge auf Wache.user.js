@@ -116,7 +116,7 @@
 
     // Funktion zum Erstellen des Modal-Fensters mit Dropdown-Menü
     function createModal() {
-        createLightboxModal({}); // Hier kann die Funktion zum Abrufen der Tabelle und das Übergeben der Daten an das Modal eingefügt werden
+        createLightboxModal({});
     }
 
     // Funktion zum Öffnen des Modal-Fensters
@@ -147,7 +147,7 @@
         event.preventDefault();
         const tableContent = await createVehicleTable();
         createLightboxModal(tableContent);
-        openModal(); // Hier wird das Modal nach dem Erstellen der Tabelle geöffnet
+        openModal();
     });
 
     // insert the trigger-element to the DOM
@@ -168,7 +168,7 @@
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.4);
-            z-index: 9999; /* Setze den Z-Index auf einen hohen Wert, um sicherzustellen, dass das Modal über anderen Elementen liegt */
+            z-index: 9999;
         }
 
         .lightboxContent {
@@ -176,7 +176,7 @@
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             margin: auto;
-            z-index: 10000; /* Setze den Z-Index auf einen höheren Wert, um sicherzustellen, dass das Modal-Content über dem Hintergrund liegt */
+            z-index: 10000;
             position: relative;
         }
 
