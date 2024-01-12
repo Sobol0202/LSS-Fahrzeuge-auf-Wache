@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LSS Fahrzeuge auf Wache
 // @namespace    www.leitstellenspiel.de
-// @version      1.0
+// @version      1.1
 // @description  Zeigt Anzahl der Fahrzeuge im S2 an.
 // @author       MissSobol
 // @match        https://www.leitstellenspiel.de
@@ -72,6 +72,7 @@
         closeButton.style.top = '10px';
         closeButton.style.right = '10px';
         closeButton.style.cursor = 'pointer';
+        closeButton.style.color = 'black';
         closeButton.addEventListener('click', () => {
             modalContent.remove();
             closeLightbox();
